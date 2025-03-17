@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World in React</title>
+    <!-- React and ReactDOM CDN -->
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone"></script> Babel for JSX -->
+
+    <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel CDN from jsDelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone"></script>
+</head>
+
+<body>
+    <div id="root"></div> <!-- Root element to render the React component -->
+
+    <script type="text/babel">
+        // A simple React component
+        const App = () => {
+            return <h1>Hello, World!</h1>;
+        };
+
+        // Render the React component inside the 'root' div
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+
+</html>
